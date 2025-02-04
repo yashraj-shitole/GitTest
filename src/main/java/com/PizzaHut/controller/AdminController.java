@@ -27,7 +27,8 @@ public class AdminController {
 	@GetMapping("/profile")
 	public ResponseEntity<?> getAllUsers(){
 		System.out.println("in admins getAllUsers method");
-		System.out.println("New Line");
+		System.out.print("Old line");
+
 		try {
 			List<Users> allUsers = userService.getAllUsers();
 			if (allUsers != null)
