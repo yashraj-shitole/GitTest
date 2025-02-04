@@ -28,6 +28,7 @@ public class AdminController {
 	public ResponseEntity<?> getAllUsers(){
 		System.out.println("in admins getAllUsers method");
 		System.out.print("Old line");
+
 		try {
 			List<Users> allUsers = userService.getAllUsers();
 			if (allUsers != null)
@@ -48,5 +49,7 @@ public class AdminController {
 			return Response.error("Invalid Credentials");
 		}
 	}
+	
+
 	
 }
